@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Simples & Elegante</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hotel Simples & Elegante</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#quartos">Quartos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Experimente o conforto e a sofisticação</h2>
+            <p>Seu refúgio perfeito para descanso e lazer</p>
+            <button onclick="reserva()">Reserve Agora</button>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <h2>Sobre Nós</h2>
+        <p>Nosso hotel oferece uma experiência única, combinando conforto, luxo e hospitalidade. Estamos localizados no coração da cidade, com fácil acesso aos principais pontos turísticos e serviços.</p>
+    </section>
+
+    <section id="quartos" class="rooms">
+        <h2>Nossos Quartos</h2>
+        <div class="quarto">
+            <img src="DALL·E 2024-10-24 10.16.55 - A luxurious hotel room with a large comfortable bed, modern furniture, soft lighting, and a window with a beautiful city view.webp" alt="Quarto Standard">
+            <h3>Quarto Standard</h3>
+            <p>A partir de R$200 por noite</p>
+        </div>
+        <div class="quarto">
+            <img src="DALL·E 2024-10-24 10.16.58 - A modern hotel restaurant with elegant furniture, decorative lighting, and a variety of dishes laid out on the table.webp" alt="Quarto Luxo">
+            <h3>Quarto Luxo</h3>
+            <p>A partir de R$400 por noite</p>
+        </div>
+        <div class="quarto">
+            <img src="DALL·E 2024-10-24 10.17.00 - A luxurious spa room with ambient lighting, relaxing massage beds, aromatic candles, and soothing decor.webp" alt="Suíte Master">
+            <h3>Suíte Master</h3>
+            <p>A partir de R$800 por noite</p>
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery">
+        <h2>Galeria</h2>
+        <div class="gallery-grid">
+            <img src="DALL·E 2024-10-24 10.16.57 - A beautiful outdoor swimming pool surrounded by palm trees, sun loungers, and umbrellas, with a clear blue sky above.webp" alt="Piscina">
+            <img src="DALL·E 2024-10-24 10.16.58 - A modern hotel restaurant with elegant furniture, decorative lighting, and a variety of dishes laid out on the table.webp" alt="Restaurante">
+            <img src="DALL·E 2024-10-24 10.16.55 - A luxurious hotel room with a large comfortable bed, modern furniture, soft lighting, and a window with a beautiful city view.webp" alt="Lobby">
+            <img src="DALL·E 2024-10-24 10.17.00 - A luxurious spa room with ambient lighting, relaxing massage beds, aromatic candles, and soothing decor.webp" alt="Spa">
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <form id="formContato" onsubmit="return enviarFormulario()">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Simples & Elegante. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
